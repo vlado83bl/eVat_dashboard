@@ -1,0 +1,56 @@
+@mixin flexAlignCenter {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flexAlignJustifyCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexAlignJustifyBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flexAlignJustifyStart {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@mixin flexAlignJustifyEnd {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@mixin flexColumnStartCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+@mixin flexColumnStartStart {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+}
+
+@mixin flexColumnCenterCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin headingLayout {
+  @include flexAlignCenter;
+  padding: 2rem 4rem;
+  width: 100%;
+  border-bottom: 1px solid #dfe3ec;
+}

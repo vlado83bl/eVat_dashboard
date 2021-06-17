@@ -1,0 +1,22 @@
+.description__items,
+.documents__items,
+.opportunities__items {
+  @include flexColumnStartCenter;
+  border: 1px solid #dfe3ec;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  width: 100%;
+}
+
+.documents__heading--symbol,
+.description__heading--symbol,
+.opportunities__heading--symbol {
+  margin-right: 2rem;
+}
+
+.documents__heading--text,
+.description__heading--text,
+.opportunities__heading--text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-dark);
+}

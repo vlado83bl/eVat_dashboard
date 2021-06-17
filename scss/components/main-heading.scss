@@ -1,0 +1,70 @@
+.main-heading {
+    padding-top: 5rem;    
+    padding-bottom: 5rem; 
+    @include flexAlignCenter;   
+
+    &__logo {
+       margin-right: 5rem; 
+    }
+
+    &__description {
+        @include flexColumnStartCenter;
+        margin-right: 14rem;
+
+        &--up {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+
+        &--down {
+            color: rgba(116, 116, 116, 1);
+        }
+    }
+
+    &__bid {
+        display: flex;
+        flex-direction: column;
+
+        &--head {
+            width: 100%;
+            margin-bottom: 1.3rem;
+            text-align: center;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #fff;
+            padding: .4rem 10rem;
+            border-radius: 3px;
+            background-color: var(--color-blue);
+
+            &-items {
+                @include flexAlignJustifyBetween;
+                width: 100%;
+            }
+
+            &-item {
+                @include flexColumnCenterCenter;
+                padding-top: 1.4rem;
+                padding-bottom: 1.2rem;
+                border: 1px solid rgba(223, 227, 236, 1);
+                border-radius: 6px;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+                flex: 0 0 30%;
+
+                &-number {
+                    color: var(--color-blue);
+                    font-weight: 700;
+                    font-size: 2.4rem;
+                    margin-bottom: .3rem;
+                }
+
+                &-text {
+                    color: rgba(106, 117, 137, 1);
+                }
+            }
+        }
+
+    }
+
+
+}

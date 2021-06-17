@@ -1,0 +1,19 @@
+{
+  "name": "rfx",
+  "version": "1.0.0",
+  "description": "RFX project",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "rfx",
+    "project",
+    "upwork"
+  ],
+  "author": "vlado83bl",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.35.0"
+  }
+}

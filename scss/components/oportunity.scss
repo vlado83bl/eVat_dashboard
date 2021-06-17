@@ -1,0 +1,60 @@
+.oportunity {
+    background-color: var(--color-gray-medium);
+    @include flexAlignJustifyBetween;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #fff;
+    font-family: "Sora", sans-serif;
+
+    &__number--num,
+    &__title--heading {
+        margin-bottom: 1rem;
+        opacity: 0.6;
+    }
+
+    &__number {
+        margin-right: 3rem;
+        &--text {
+            font-size: 2.4rem;
+            font-weight: 700;
+        }
+    }
+
+    &__title {
+        margin-left: auto;
+        &--text {
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+    }
+}
+
+.details {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+
+  &__items {
+    margin-top: 3rem;
+    @include flexAlignCenter;
+  }
+
+  &__item {
+    padding-right: 3rem;
+    margin-right: 3rem;
+
+    &:not(:last-child) {
+      border-right: 1px solid #DFE3EC;
+    }
+
+    &--heading {
+      margin-bottom: 1rem;
+      color: #6A7589;
+    }
+
+    &--text {
+      color: #1A2332;
+      font-weight: 600;
+    }
+
+  }
+}

@@ -1,0 +1,151 @@
+.documents {
+  margin-top: 3rem;
+
+  &__items {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  &__heading--items {
+    padding: 1.4rem 4rem;
+  }
+
+  &__heading--item-name,
+  &__list--item-element-name {
+    flex: 0 0 45%;
+  }
+  &__heading--item-type,
+  &__list--item-element-type {
+    flex: 0 0 13%;
+  }
+  &__heading--item-size,
+  &__list--item-element-size {
+    flex: 0 0 13%;
+  }
+  &__heading--item-date,
+  &__list--item-element-date {
+    flex: 0 0 13%;
+  }
+  &__heading--item-action,
+  &__list--item-element-action {
+    flex: 1;
+  }
+
+  &__heading {
+    @include headingLayout;
+
+    &--symbol {
+      margin-right: 2rem;
+    }
+
+    &--text {
+    }
+
+    &--items {
+      @include flexAlignCenter;
+      width: 100%;
+      background-color: #f8f9fc;
+      border-right: 1px solid #dfe3ec;
+      border-left: 1px solid #dfe3ec;
+      border-bottom: 1px solid #dfe3ec;
+    }
+
+    &--item {
+      &-date {
+        @include flexAlignCenter;
+
+        & p {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+
+  &__list {
+    width: 100%;
+
+    &--item {
+      @include flexAlignCenter;
+      width: 100%;
+      padding: 1rem 4rem;
+      color: #535c6d;
+      &:not(:last-child) {
+        border-bottom: 1px solid #dfe3ec;
+      }
+
+      &-element {
+        @include flexAlignCenter;
+        width: 100%;
+        & > * {
+          @include flexAlignCenter;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          color: rgba(83, 92, 109, 1);
+        }
+
+        &-name {
+          padding-right: 4rem;
+
+          & img {
+            margin-right: 2rem;
+          }
+        }
+
+        &-type {
+        }
+
+        &-size {
+        }
+
+        &-date {
+        }
+
+        &-action {
+          @include flexAlignCenter;
+          margin-right: 4rem;
+          font-size: 1.2rem;
+          font-weight: 600;
+          color: var(--color-blue);
+          padding: 0.8rem 1.8rem;
+          border: 1px solid rgba(209, 216, 229, 1);
+          border-radius: 3px;
+
+          & img {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.pagination {
+  @include flexAlignJustifyEnd;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  width: 100%;
+  font-family: "Sora", sans-serif;
+  border-radius: 3px;
+
+  & a {
+    color: #6a7589;
+    font-weight: 600;
+    padding: .8rem 1.6rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border: 1px solid #ddd;
+  }
+
+  & a.active {
+    background-color: rgba(26, 110, 252, 0.2);
+    color: var(--color-blue);
+  }
+
+  &__more {
+    padding: .8rem 1.4rem !important;
+  }
+
+  & a:hover:not(.active) {
+    background-color: #ddd;
+  }
+}

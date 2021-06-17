@@ -1,0 +1,113 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  font-family: "Sora", sans-serif;
+
+  &__top,
+  &__bottom {
+    padding: 0 20rem;
+  }
+
+  &__top {
+    @include flexAlignJustifyStart;
+    width: 100%;
+    background-color: #293c51;
+
+    &--questions,
+    &--updates {
+      @include flexColumnStartStart;
+      flex: 0 0 50%;
+      margin-top: 4rem;
+    }
+
+    &--questions-title,
+    &--updates-title {
+      font-size: 2.4rem;
+      font-weight: 600;
+      line-height: 3rem;
+      color: #fff;
+      margin-bottom: 2rem;
+    }
+
+    &--questions-text,
+    &--updates-text {
+      font-size: 1.6rem;
+      line-height: 2rem;
+      color: #fff;
+      opacity: 0.6;
+      margin-bottom: 2rem;
+    }
+
+    &--questions-input,
+    &--updates-input {
+      width: 100%;
+      & input,
+      & textarea {
+        border: none;
+        background-color: #293c51;
+        font-family: "Sora", sans-serif;
+        padding: 2rem 3rem 2rem 0;
+        border-bottom: 1px solid #49627D;
+        width: 100%;
+        color: #fff;
+        opacity: 0.6;
+
+        &:focus {
+          outline: none;
+        }
+
+        &::placeholder {
+          color: #fff;
+          opacity: 0.6;
+        }
+      }
+
+      & textarea {
+        width: 100%;
+        margin-right: 0 !important;
+        resize: none;
+      }
+    }
+
+    &--questions {
+      padding-right: 8rem;
+
+      &-input {
+        @include flexAlignJustifyStart;
+
+        & :first-child {
+          margin-right: 2.5rem;
+        }
+      }
+
+      &-send {
+        border: none;
+        background-color: var(--color-blue);
+        border-radius: 3px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+        padding: 1.2rem 5.8rem;
+        color: #F4F8FF;
+        margin-bottom: 8rem;
+      }
+    }
+
+    &--updates {
+      padding-left: 6rem;
+
+      &-input {
+        @include flexAlignCenter
+      }
+
+      &-follow {
+        @include flexAlignJustifyStart;
+      }
+    }
+  }
+
+  &__bottom {
+    background-color: #243547;
+  }
+}

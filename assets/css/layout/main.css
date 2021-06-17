@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body > * {
+  padding: 0 20rem;
+}
+
+:root {
+  --color-blue: rgba(26, 110, 252, 1);
+  --color-gray-ultra-light: #F4F8FF;
+  --color-gray-light: #7B95B0;
+  --color-gray-medium: #62738A;
+  --color-gray: #49627D;
+  --color-gray-dark: #293C51;
+  --color-gray-ultra-dark: #243547;
+  --color-dark: #1A2332;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 68.75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+p {
+  font-size: 1.4rem;
+  font-family: "Sora", sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */

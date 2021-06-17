@@ -1,0 +1,26 @@
+.description {
+  margin-bottom: 5rem;
+  
+  &__items {
+  }
+
+  &__heading {
+    @include headingLayout;
+
+    &--symbol {
+      margin-right: 2rem;
+    }
+
+    &--text {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--color-dark);
+    }
+  }
+
+  &__text {
+    padding: 3rem 6rem 3rem 4rem;
+    color: #535C6D;
+    line-height: 2.1rem;
+  }
+}
