@@ -48,9 +48,16 @@
   justify-content: center;
 }
 
+@mixin flexColumnCenterStart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 @mixin headingLayout {
   @include flexAlignCenter;
   padding: 2rem 4rem;
   width: 100%;
-  border-bottom: 1px solid #dfe3ec;
+  border-bottom: var(--main-border);
 }

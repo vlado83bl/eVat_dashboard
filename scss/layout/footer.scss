@@ -7,18 +7,31 @@
   &__top,
   &__bottom {
     padding: 0 20rem;
+
+    @media only screen and (min-width: 2000px) {
+      padding: 0 40rem;
+    }
   }
 
   &__top {
     @include flexAlignJustifyStart;
     width: 100%;
     background-color: #293c51;
+    padding-top: 6rem;
+
+    @media only screen and (max-width: 768px) {
+      @include flexColumnCenterCenter;
+    }
 
     &--questions,
     &--updates {
       @include flexColumnStartStart;
       flex: 0 0 50%;
-      margin-top: 4rem;
+      height: 44rem;
+
+      @media only screen and (max-width: 950px) {
+        height: 48rem;
+      }
     }
 
     &--questions-title,
@@ -27,15 +40,14 @@
       font-weight: 600;
       line-height: 3rem;
       color: #fff;
-      margin-bottom: 2rem;
+      margin-bottom: 1.8rem;
     }
 
     &--questions-text,
     &--updates-text {
       font-size: 1.6rem;
       line-height: 2rem;
-      color: #fff;
-      opacity: 0.6;
+      color: var(--color-white-opacity);
       margin-bottom: 2rem;
     }
 
@@ -50,16 +62,14 @@
         padding: 2rem 3rem 2rem 0;
         border-bottom: 1px solid #49627D;
         width: 100%;
-        color: #fff;
-        opacity: 0.6;
+        color: var(--color-white-opacity);
 
         &:focus {
           outline: none;
         }
 
         &::placeholder {
-          color: #fff;
-          opacity: 0.6;
+          color: var(--color-white-opacity);
         }
       }
 
@@ -72,6 +82,12 @@
 
     &--questions {
       padding-right: 8rem;
+      width: 100%;
+      
+      @media only screen and (max-width: 768px) {
+        padding-right : 0;
+        margin-bottom: 3rem;
+      }
 
       &-input {
         @include flexAlignJustifyStart;
@@ -81,21 +97,37 @@
         }
       }
 
-      &-send {
-        border: none;
-        background-color: var(--color-blue);
+      &-send,
+      &-signup {
         border-radius: 3px;
         font-size: 1.2rem;
         font-weight: 600;
         line-height: 1.5rem;
-        padding: 1.2rem 5.8rem;
         color: #F4F8FF;
-        margin-bottom: 8rem;
+      }
+
+      &-send {
+        background-color: var(--color-blue);
+        padding: 1.3rem 6rem;
+        border: none;
+      }
+
+      &-signup {
+        border: 1px solid #F4F8FF;
+        background-color: inherit;
+        padding: 1.2rem;
+        width: 13.5rem;
       }
     }
 
     &--updates {
       padding-left: 6rem;
+
+      @media only screen and (max-width: 768px) {
+        padding-left : 0;
+        width: 100%;
+        margin-bottom: 4rem;
+      }
 
       &-input {
         @include flexAlignCenter
@@ -103,11 +135,41 @@
 
       &-follow {
         @include flexAlignJustifyStart;
+
+        &-image {
+          margin-right: 1.5rem;
+        }
       }
     }
   }
 
+  &__bottom,
+  &__bottom a {
+    color: var(--color-white-opacity);
+    font-size: 1.4rem;
+  }
+
   &__bottom {
+    @include flexAlignJustifyBetween;
     background-color: #243547;
+    padding-top: 5.4rem;
+    padding-bottom: 4.4rem;
+
+    @media only screen and (max-width: 768px) {
+      @include flexColumnCenterCenter;
+
+      & p:first-child {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  &__bottom a,
+  &__bottom a:hover,
+  &__bottom a:focus,
+  &__bottom a:active {
+    text-decoration: none;
+    color: inherit;
+    margin-right: 1rem;
   }
 }

@@ -43,7 +43,7 @@
     margin-right: 3rem;
 
     &:not(:last-child) {
-      border-right: 1px solid #DFE3EC;
+      border-right: var(--main-border);
     }
 
     &--heading {

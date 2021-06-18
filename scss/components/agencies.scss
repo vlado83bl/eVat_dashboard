@@ -1,0 +1,87 @@
+.agencies {
+  margin-top: 3rem;
+
+  &__items {
+    width: 100%;
+    overflow-x: hidden;
+    border: var(--main-border);
+  }
+
+  &__heading--items {
+    padding: 1.4rem 4rem;
+  }
+
+  &__heading--item-name,
+  &__list--item-element-name {
+    flex: 0 0 60%;
+  }
+  &__heading--item-opportunities,
+  &__list--item-element-opportunities {
+    flex: 0 0 25%;
+  }
+  &__heading--item-contracts,
+  &__list--item-element-contracts {
+    flex: 0 0 1%;
+  }
+
+  &__heading {
+    @include headingLayout;
+
+    &--symbol {
+      margin-right: 2rem;
+    }
+
+    &--items {
+      @include flexAlignCenter;
+      width: 100%;
+      color: #6A7589;
+      background-color: #f8f9fc;
+      border-right: var(--main-border);
+      border-left: var(--main-border);
+      border-bottom: var(--main-border);
+    }
+
+    &--item {
+      &-date {
+        @include flexAlignCenter;
+
+        & p {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+
+  &__list {
+    width: 100%;
+
+    &--item {
+      @include flexAlignCenter;
+      width: 100%;
+      padding: 1rem 4rem;
+      color: #535c6d;
+      &:not(:last-child) {
+        border-bottom: var(--main-border);
+      }
+
+      &-element {
+        @include flexAlignCenter;
+        width: 100%;
+        & > * {
+          @include flexAlignCenter;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          color: rgba(83, 92, 109, 1);
+        }
+
+        &-name {
+          padding-right: 4rem;
+
+          & img {
+            margin-right: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
