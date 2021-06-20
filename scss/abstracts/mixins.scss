@@ -3,6 +3,11 @@
   align-items: center;
 }
 
+@mixin flexAlignStart {
+  display: flex;
+  align-items: flex-start;
+}
+
 @mixin flexAlignJustifyCenter {
   display: flex;
   align-items: center;
