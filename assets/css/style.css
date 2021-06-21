@@ -890,6 +890,275 @@ select option {
   }
 }
 
+.subheader {
+  background-color: #f8f9fc;
+  border: var(--main-border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.subheader__title {
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 4.3rem;
+  color: #222151;
+  margin-top: 8rem;
+  margin-bottom: 6rem;
+}
+.subheader__categories {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+@media only screen and (max-width: 850px) {
+  .subheader__categories {
+    display: none;
+  }
+}
+.subheader__categories--item {
+  margin-right: 2rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  border-bottom: 5px solid transparent;
+}
+.subheader__categories--item-active {
+  border-bottom: 5px solid var(--color-blue);
+}
+.subheader__categories--item-active a {
+  color: var(--color-blue) !important;
+}
+.subheader__categories--item a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #535c6d;
+  font-family: "Sora", sans-serif;
+}
+
+.reasons {
+  display: flex;
+  flex-direction: column;
+}
+.reasons__content {
+  display: flex;
+  align-items: center;
+  margin-top: 14rem;
+}
+@media only screen and (max-width: 850px) {
+  .reasons__content {
+    margin-top: 4rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .reasons__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .reasons__content--resp-reverse {
+    flex-direction: column-reverse;
+  }
+}
+.reasons__content:last-child {
+  margin-bottom: 20rem;
+}
+.reasons__content--description {
+  flex: 0 0 50%;
+}
+.reasons__content--description-left {
+  padding-right: 12rem;
+}
+@media only screen and (max-width: 850px) {
+  .reasons__content--description-left {
+    padding-right: 7rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .reasons__content--description-left {
+    padding-right: 0;
+    padding: 0 2rem 2rem 2rem;
+  }
+}
+.reasons__content--description-right {
+  padding-left: 12rem;
+}
+@media only screen and (max-width: 850px) {
+  .reasons__content--description-right {
+    padding-left: 7rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .reasons__content--description-right {
+    padding-left: 0;
+    padding: 0 2rem 2rem 2rem;
+  }
+}
+.reasons__content--description img {
+  margin-bottom: 3rem;
+}
+.reasons__content--description-heading {
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  margin-bottom: 2.5rem;
+}
+.reasons__content--description-text {
+  font-size: 1.5rem;
+  color: #535c6d;
+  line-height: 2.2rem;
+}
+.reasons__content--screen {
+  flex: 0 0 50%;
+}
+.reasons__content--screen img {
+  max-width: 100%;
+}
+
+.federal-agencies {
+  padding: 0 15rem 5rem 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.federal-agencies__title {
+  padding-top: 11rem;
+  padding-bottom: 1.5rem;
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  text-align: center;
+  color: #222151;
+}
+.federal-agencies__text {
+  text-align: center;
+  line-height: 2.1rem;
+  color: #535c6d;
+  padding-bottom: 8.2rem;
+}
+.federal-agencies__images {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+}
+.federal-agencies__images-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 19%;
+  margin-bottom: 6rem;
+  width: 16rem;
+  height: 16rem;
+}
+.federal-agencies__button {
+  justify-content: center;
+  border: var(--main-border);
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--color-blue);
+  padding: 1.3rem 9rem;
+  background-color: #fff;
+  cursor: pointer;
+  margin-bottom: 7.5rem;
+}
+.federal-agencies__button:hover {
+  border: 1px solid var(--color-blue);
+}
+
+.getstarted {
+  text-align: center;
+  color: #FFF;
+  background: linear-gradient(to right bottom, rgba(30, 68, 133, 0.9), rgba(30, 68, 133, 0.9)), url("../../assets/img/federal_background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 20rem 20rem 13rem 20rem;
+}
+.getstarted__heading {
+  font-weight: 800;
+  font-size: 6.2rem;
+  line-height: 6.2rem;
+  padding-bottom: 9rem;
+}
+.getstarted__text {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  padding: 0 5rem;
+  padding-bottom: 7rem;
+}
+.getstarted__button {
+  border-radius: 3px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: #F4F8FF;
+  background-color: var(--color-blue);
+  padding: 1.3rem 6rem;
+  border: none;
+}
+
+.cards {
+  background-color: #f8f9fc;
+}
+.cards__heading {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  text-align: center;
+  color: #222151;
+}
+.cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10rem;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 768px) {
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.cards-container--card {
+  flex: 0 0 24%;
+  background: #fff;
+  min-height: 31rem;
+  padding: 3.3rem 4.4rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+  font-family: "Sora", sans-serif;
+}
+@media only screen and (max-width: 1000px) {
+  .cards-container--card {
+    flex: 0 0 48%;
+    margin-bottom: 2rem;
+  }
+}
+.cards-container--card-title {
+  padding-top: 3.6rem;
+  padding-bottom: 2rem;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  color: #222151;
+}
+.cards-container--card-text {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #535C6D;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -903,6 +1172,9 @@ select option {
   width: 11.1rem;
   height: auto;
 }
+.header__logo a {
+  text-decoration: none;
+}
 .header__data {
   display: flex;
   align-items: center;
@@ -910,6 +1182,15 @@ select option {
 .header__data--item {
   font-weight: 600;
   margin-right: 2rem;
+  list-style-type: none;
+}
+.header__data--item a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  line-height: 1.8rem;
+  color: #1d1d1f;
 }
 .header__data--item-active {
   padding: 0.8rem 1.2rem;
@@ -917,6 +1198,7 @@ select option {
   background-color: var(--color-blue);
   border: none;
   border-radius: 3px;
+  cursor: pointer;
 }
 .header__data--item-active p {
   font-size: 1.2rem;
@@ -973,6 +1255,10 @@ html {
 p {
   font-size: 1.4rem;
   font-family: "Sora", sans-serif;
+}
+
+button {
+  cursor: pointer;
 }
 
 .description__items,

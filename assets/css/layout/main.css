@@ -51,4 +51,8 @@ p {
   font-family: "Sora", sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=main.css.map */

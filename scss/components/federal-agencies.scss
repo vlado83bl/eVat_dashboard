@@ -1,0 +1,88 @@
+.federal-agencies {
+  padding: 0 15rem 5rem 15rem;
+  @include flexColumnCenterCenter;
+  &__title {
+    padding-top: 11rem;
+    padding-bottom: 1.5rem;
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    text-align: center;
+    color: #222151;
+  }
+
+  &__text {
+    text-align: center;
+    line-height: 2.1rem;
+    color: #535c6d;
+    padding-bottom: 8.2rem;
+  }
+
+  &__images {
+    @include flexAlignCenter;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+
+    &-container {
+      @include flexAlignJustifyCenter;
+      flex: 0 0 19%;
+      margin-bottom: 6rem;
+      width: 16rem;
+      height: 16rem;
+    }
+  }
+
+  &__button {
+    justify-content: center;
+    border: var(--main-border);
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--color-blue);
+    padding: 1.3rem 9rem;
+    background-color: #fff;
+    cursor: pointer;
+    margin-bottom: 7.5rem;
+
+    &:hover {
+      border: 1px solid var(--color-blue);
+    }
+  }
+}
+
+.getstarted {
+  text-align: center;
+  color: #FFF;
+  background: linear-gradient(to right bottom, rgba(30, 68, 133, .9), rgba(30, 68, 133, .9)), url('../../assets/img/federal_background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 20rem 20rem 13rem 20rem ;
+
+  &__heading {
+    font-weight: 800;
+    font-size: 6.2rem;
+    line-height: 6.2rem;
+    padding-bottom: 9rem;
+  }
+
+  &__text {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    padding: 0 5rem;
+    padding-bottom: 7rem;
+  }
+
+  &__button {
+    border-radius: 3px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: #F4F8FF;
+    background-color: var(--color-blue);
+    padding: 1.3rem 6rem;
+    border: none;
+  }
+}
