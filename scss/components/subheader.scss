@@ -4,12 +4,17 @@
   @include flexColumnCenterCenter;
 
   &__title {
-    font-weight: 600;
-    font-size: 3.2rem;
-    line-height: 4.3rem;
-    color: #222151;
     margin-top: 8rem;
     margin-bottom: 6rem;
+  }
+
+  &__text {
+    width: 70%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    color: var(--color-gray-subtle-dark);
+    margin-bottom: 17rem;
   }
 
   &__categories {
@@ -37,7 +42,7 @@
         text-decoration: none;
         font-size: 1.4rem;
         font-weight: 700;
-        color: #535c6d;
+        color: var(--color-gray-subtle-dark);
         font-family: "Sora", sans-serif;
       }
     }

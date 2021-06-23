@@ -1,20 +1,16 @@
 .federal-agencies {
   padding: 0 15rem 5rem 15rem;
   @include flexColumnCenterCenter;
+
   &__title {
     padding-top: 11rem;
     padding-bottom: 1.5rem;
-    font-weight: 600;
-    font-size: 3.2rem;
-    line-height: 4rem;
-    text-align: center;
-    color: #222151;
   }
 
   &__text {
     text-align: center;
     line-height: 2.1rem;
-    color: #535c6d;
+    color: var(--color-gray-subtle-dark);
     padding-bottom: 8.2rem;
   }
 
@@ -52,37 +48,58 @@
   }
 }
 
-.getstarted {
-  text-align: center;
-  color: #FFF;
-  background: linear-gradient(to right bottom, rgba(30, 68, 133, .9), rgba(30, 68, 133, .9)), url('../../assets/img/federal_background.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  padding: 20rem 20rem 13rem 20rem ;
+.map {
+  background-color: #F8F9FC;
 
   &__heading {
-    font-weight: 800;
-    font-size: 6.2rem;
-    line-height: 6.2rem;
-    padding-bottom: 9rem;
+    padding: 10rem;
   }
 
-  &__text {
-    font-size: 2rem;
-    line-height: 2.4rem;
-    padding: 0 5rem;
-    padding-bottom: 7rem;
-  }
-
-  &__button {
-    border-radius: 3px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    line-height: 1.5rem;
-    color: #F4F8FF;
-    background-color: var(--color-blue);
-    padding: 1.3rem 6rem;
-    border: none;
+  &__img {
+    padding-bottom: 16rem;
+    max-width: 100%;
   }
 }
+
+.governments {
+
+  &__heading {
+    padding: 9rem 0 5rem 0;
+     text-align: left;
+
+     @media only screen and (max-width: 768px) {
+      text-align: center;
+     }
+  }
+
+  &__list {
+    @include flexAlignStartJustifyBetween;
+    width: 100%;
+    padding-bottom: 6rem;
+    flex-wrap: wrap;
+
+    @media only screen and(max-width: 768px) {
+      justify-content: flex-start;
+    }
+
+    &--container {
+
+      @media only screen and(max-width: 768px) {
+        flex: 0 0 25%;
+        margin-bottom: 3rem;
+        text-align: center;
+      }
+
+      @media only screen and(max-width: 600px) {
+        flex: 0 0 33.33%;
+        margin-bottom: 3rem;
+      }
+
+      &-item {
+        line-height: 2.6rem;
+        color: var(--color-gray-subtle-dark);
+      }
+    }
+  }
+}
+

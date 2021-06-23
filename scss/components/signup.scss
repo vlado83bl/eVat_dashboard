@@ -59,7 +59,7 @@
       }
 
       &::placeholder {
-        color: #535c6d;
+        color: var(--color-gray-subtle-dark);
         font-size: 1.4rem;
       }
     }
@@ -132,5 +132,5 @@
 
 select,
 select option {
-  color: #535c6d;
+  color: var(--color-gray-subtle-dark);
 }

@@ -6,12 +6,17 @@
 body > * {
   padding: 0 20rem;
 }
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 1800px) {
   body > * {
     padding: 0 40rem;
   }
 }
-@media only screen and (max-width: 90rem) {
+@media only screen and (min-width: 2200px) {
+  body > * {
+    padding: 0 60rem;
+  }
+}
+@media only screen and (max-width: 900px) {
   body > * {
     padding: 0 10rem;
   }
@@ -19,15 +24,16 @@ body > * {
 
 :root {
   --color-blue: rgba(26, 110, 252, 1);
-  --color-gray-ultra-light: #F4F8FF;
-  --color-gray-light: #7B95B0;
-  --color-gray-medium: #62738A;
-  --color-gray: #49627D;
-  --color-gray-dark: #293C51;
+  --color-gray-ultra-light: #f4f8ff;
+  --color-gray-light: #7b95b0;
+  --color-gray-medium: #62738a;
+  --color-gray: #49627d;
+  --color-gray-subtle-dark: #535c6d;
+  --color-gray-dark: #293c51;
   --color-gray-ultra-dark: #243547;
-  --color-dark: #1A2332;
+  --color-dark: #1a2332;
   --color-white-opacity: rgba(255, 255, 255, 0.6);
-  --main-border: 1px solid #DFE3EC;
+  --main-border: 1px solid #dfe3ec;
 }
 
 html {

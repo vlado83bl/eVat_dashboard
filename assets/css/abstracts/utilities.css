@@ -1,0 +1,16 @@
+.u-big-heading {
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  text-align: center;
+  color: #222151;
+}
+@media only screen and (max-width: 600px) {
+  .u-big-heading {
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+}
+
+/*# sourceMappingURL=utilities.css.map */

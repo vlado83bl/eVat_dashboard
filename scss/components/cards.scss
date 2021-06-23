@@ -1,14 +1,10 @@
 .cards {
   background-color: #f8f9fc;
+  border-bottom: var(--main-border);
 
   &__heading {
     padding-top: 9rem;
     padding-bottom: 9rem;
-    font-weight: 600;
-    font-size: 3.2rem;
-    line-height: 4rem;
-    text-align: center;
-    color: #222151;
   }
 
   &-container {
@@ -34,6 +30,10 @@
         margin-bottom: 2rem;
       }
 
+      @media only screen and (max-width: 768px) {
+        text-align: center;
+      }
+
       &-title {
         padding-top: 3.6rem;
         padding-bottom: 2rem;font-weight: 600;
@@ -45,7 +45,7 @@
       &-text {
         font-size: 1.5rem;
         line-height: 2rem;
-        color: #535C6D;
+        color: var(--color-gray-subtle-dark);
       }
     }
   }

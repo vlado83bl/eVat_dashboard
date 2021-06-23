@@ -1,62 +1,66 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    & > * {
-        padding: 0 20rem;
+  & > * {
+    padding: 0 20rem;
 
-        @media only screen and (min-width: 2000px) {
-          padding: 0 40rem;
-        }
-
-        @media only screen and (max-width: 90rem) {
-          padding: 0 10rem;
-        }
+    @media only screen and (min-width: 1800px) {
+      padding: 0 40rem;
     }
+
+    @media only screen and (min-width: 2200px) {
+      padding: 0 60rem;
+    }
+
+    @media only screen and (max-width: 900px) {
+      padding: 0 10rem;
+    }
+  }
 }
 
 :root {
-    --color-blue: rgba(26, 110, 252, 1);
-    --color-gray-ultra-light: #F4F8FF;
-    --color-gray-light: #7B95B0;
-    --color-gray-medium: #62738A;
-    --color-gray: #49627D;
-    --color-gray-dark: #293C51;
-    --color-gray-ultra-dark: #243547;
-    --color-dark: #1A2332;
-    --color-white-opacity: rgba(255, 255, 255, 0.6);
-    --main-border: 1px solid #DFE3EC;
+  --color-blue: rgba(26, 110, 252, 1);
+  --color-gray-ultra-light: #f4f8ff;
+  --color-gray-light: #7b95b0;
+  --color-gray-medium: #62738a;
+  --color-gray: #49627d;
+  --color-gray-subtle-dark: #535c6d;
+  --color-gray-dark: #293c51;
+  --color-gray-ultra-dark: #243547;
+  --color-dark: #1a2332;
+  --color-white-opacity: rgba(255, 255, 255, 0.6);
+  --main-border: 1px solid #dfe3ec;
 }
 
-$bp-largest: 75em;    //1200px; 
-$bp-large: 68.75em;    //1100px; 
-$bp-medium: 56.25em;    //900px; 
-$bp-small: 37.5em;    //600px; 
-$bp-smallest: 31.25em;    //500px; 
+$bp-largest: 75em; //1200px;
+$bp-large: 68.75em; //1100px;
+$bp-medium: 56.25em; //900px;
+$bp-small: 37.5em; //600px;
+$bp-smallest: 31.25em; //500px;
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%; //1rem = 10px;
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem = 10px;
 
-    @media only screen and (max-width: $bp-large) {
-        font-size: 50%;  //1rem = 8px;
-    }
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%; //1rem = 8px;
+  }
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 p {
-    font-size: 1.4rem;
-    font-family: "Sora", sans-serif;
+  font-size: 1.4rem;
+  font-family: "Sora", sans-serif;
 }
 
 button {
   cursor: pointer;
 }
-
