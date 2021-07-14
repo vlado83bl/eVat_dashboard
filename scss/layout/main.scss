@@ -3,47 +3,11 @@
   padding: 0;
 }
 
-body {
-  & > * {
-    padding: 0 20rem;
-
-    @media only screen and (min-width: 1800px) {
-      padding: 0 40rem;
-    }
-
-    @media only screen and (min-width: 2200px) {
-      padding: 0 60rem;
-    }
-
-    @media only screen and (max-width: 900px) {
-      padding: 0 10rem;
-    }
-  }
-}
-
-:root {
-  --color-blue: rgba(26, 110, 252, 1);
-  --color-gray-ultra-light: #f4f8ff;
-  --color-gray-light: #7b95b0;
-  --color-gray-medium: #62738a;
-  --color-gray: #49627d;
-  --color-gray-subtle-dark: #535c6d;
-  --color-gray-dark: #293c51;
-  --color-gray-ultra-dark: #243547;
-  --color-dark: #1a2332;
-  --color-white-opacity: rgba(255, 255, 255, 0.6);
-  --main-border: 1px solid #dfe3ec;
-}
-
-$bp-largest: 75em; //1200px;
 $bp-large: 68.75em; //1100px;
-$bp-medium: 56.25em; //900px;
-$bp-small: 37.5em; //600px;
-$bp-smallest: 31.25em; //500px;
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; //1rem = 10px;
+  // font-size: 62.5%; //1rem = 10px;
 
   @media only screen and (max-width: $bp-large) {
     font-size: 50%; //1rem = 8px;
@@ -56,11 +20,9 @@ html {
   box-sizing: inherit;
 }
 
-p {
-  font-size: 1.4rem;
-  font-family: "Sora", sans-serif;
-}
-
-button {
-  cursor: pointer;
+p,
+a {
+  font-size: 14px;
+  font-family: "Asap", sans-serif;
+  margin-bottom: 0;
 }

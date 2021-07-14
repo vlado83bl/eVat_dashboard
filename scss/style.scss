@@ -1,27 +1,15 @@
 @import "abstracts/mixins";
 @import "abstracts/utilities";
+@import "abstracts/variables";
 
-@import "components/routes";
-@import "components/main-heading";
-@import "components/oportunity";
-@import "components/description";
-@import "components/documents";
-@import "components/opportunities";
-@import "components/info";
-@import "components/agencies";
-@import "components/signup";
-@import "components/pricing";
+
+@import "components/button";
+@import "components/main";
 @import "components/subheader";
-@import "components/reasons";
-@import "components/federal-agencies";
-@import "components/cards";
-@import "components/get-started";
-@import "components/contact";
 
 @import "layout/header";
 @import "layout/main";
 @import "layout/main-layout";
-@import "layout/footer";
 @import "layout/sidenav";
 
 

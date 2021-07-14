@@ -3,42 +3,8 @@
   padding: 0;
 }
 
-body > * {
-  padding: 0 20rem;
-}
-@media only screen and (min-width: 1800px) {
-  body > * {
-    padding: 0 40rem;
-  }
-}
-@media only screen and (min-width: 2200px) {
-  body > * {
-    padding: 0 60rem;
-  }
-}
-@media only screen and (max-width: 900px) {
-  body > * {
-    padding: 0 10rem;
-  }
-}
-
-:root {
-  --color-blue: rgba(26, 110, 252, 1);
-  --color-gray-ultra-light: #f4f8ff;
-  --color-gray-light: #7b95b0;
-  --color-gray-medium: #62738a;
-  --color-gray: #49627d;
-  --color-gray-subtle-dark: #535c6d;
-  --color-gray-dark: #293c51;
-  --color-gray-ultra-dark: #243547;
-  --color-dark: #1a2332;
-  --color-white-opacity: rgba(255, 255, 255, 0.6);
-  --main-border: 1px solid #dfe3ec;
-}
-
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
 }
 @media only screen and (max-width: 68.75em) {
   html {
@@ -52,13 +18,11 @@ html {
   box-sizing: inherit;
 }
 
-p {
-  font-size: 1.4rem;
-  font-family: "Sora", sans-serif;
-}
-
-button {
-  cursor: pointer;
+p,
+a {
+  font-size: 14px;
+  font-family: "Asap", sans-serif;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

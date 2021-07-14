@@ -1,17 +1,50 @@
-/* Error: Undefined mixin.
- *   ,
- * 2 |   @include flexAlignStart;
- *   |   ^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\layout\sidenav.scss 2:3  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a   \2577 \a 2 \2502    @include flexAlignStart;\d\a   \2502    ^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\layout\\sidenav.scss 2:3  root stylesheet";
+.sidenav {
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(223, 223, 223, 0.329);
 }
+.sidenav i {
+  color: var(--color-light-gray);
+  font-size: 24px;
+  flex: 0 0 25%;
+  font-weight: 600;
+}
+.sidenav a {
+  flex: 1;
+}
+.sidenav__logo {
+  border-bottom: 1px solid #CED3D9;
+}
+.sidenav__logo img {
+  margin-right: 35px;
+}
+@media only screen and (max-width: 1400px) {
+  .sidenav__logo img {
+    margin-right: 15px;
+  }
+}
+.sidenav__main--list-item {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.sidenav__main--list-item-active {
+  background-color: var(--color-purple-muted);
+  border-left: 4px solid var(--color-purple);
+}
+.sidenav__main--list-item-active a, .sidenav__main--list-item-active i {
+  color: var(--color-purple) !important;
+  font-weight: 700;
+}
+.sidenav__main--list-item-active a {
+  transform: translateX(-4px);
+}
+.sidenav__main--list-item a {
+  text-decoration: none;
+  color: var(--color-dark);
+  line-height: 20px;
+}
+.sidenav__main--heading {
+  color: var(--color-gray-muted) !important;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=sidenav.css.map */

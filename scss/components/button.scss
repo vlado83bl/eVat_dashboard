@@ -1,0 +1,37 @@
+button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.button-registration {
+  padding: 8px 16px;
+  background-color: #bdb2e1;
+  border-radius: 16px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.button-status,
+.button-comment {
+  padding: 8px 16px;
+  font-weight: 700;
+  border-radius: 16px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: var(--color-purple);
+}
+
+.button-signature {
+  padding: 4px 8px;
+  font-weight: 700;
+  border-radius: 16px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: rgba(118, 184, 82, 1);
+}

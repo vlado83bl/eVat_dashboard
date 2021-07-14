@@ -1,48 +1,46 @@
-.header {
-  @include flexAlignJustifyBetween;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid rgba(235, 236, 237, 1);
+.main__header {
+  padding-left: 17.5px;
+  width: 100%;
+  background-color: #fff;
 
-  &__logo {
-    width: 11.1rem;
-    height: auto;
+  &--item {
+    border-right: 2px solid rgba(223, 223, 223, 0.329);
+    &-data {
+      &-text {
+      }
+    }
 
-    & a {
-        text-decoration: none;
+    & i {
+      font-size: 16px;
+      color: var(--color-purple);
     }
   }
 
-    &__data {
-    @include flexAlignCenter;
+  &--user-nav {
+    &-notification {
+      background-color: red;
+      border: 3px solid #fff;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      left: 10px;
 
-    &--item {
-      font-weight: 600;
-      margin-right: 2rem;
-      list-style-type: none;
-
-      & a {
-        text-decoration: none;
-        font-size: 1.4rem;
-        font-family: "Sora", sans-serif;
-        font-weight: 600;
-        line-height: 1.8rem;
-        color: #1d1d1f;
+      &-box {
+        position: relative;
+        margin-right: 40px;
       }
+    }
 
-      &-active {
-        padding: 0.8rem 1.2rem;
-        color: #fff;
-        background-color: var(--color-blue);
-        border: none;
-        border-radius: 3px;
-        cursor: pointer;
+    & i {
+      font-size: 24px;
+    }
 
-        & p {
-          font-size: 1.2rem;
-        }
-      }
+    &-name {
+      color: var(--color-dark);
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
     }
   }
 }

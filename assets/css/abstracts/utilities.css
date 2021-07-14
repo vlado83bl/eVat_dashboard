@@ -1,16 +1,42 @@
-.u-big-heading {
-  font-weight: 600;
-  font-size: 3.2rem;
-  line-height: 4rem;
-  text-align: center;
-  color: #222151;
+.u-heading-small {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #a1a9b2;
 }
-@media only screen and (max-width: 600px) {
-  .u-big-heading {
-    font-weight: 600;
-    font-size: 2.4rem;
-    line-height: 3rem;
-  }
+
+.u-heading-big {
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.u-text-light {
+  color: var(--color-light-gray);
+  line-height: 24px;
+}
+
+.u-text-light-small {
+  color: var(--color-light-gray);
+  line-height: 24px;
+  font-size: 12px;
+}
+
+.u-text-black {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.u-text-main-info {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-dark);
+}
+
+.u-half-big-margin {
+  margin-bottom: 32px;
 }
 
 /*# sourceMappingURL=utilities.css.map */

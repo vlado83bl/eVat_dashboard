@@ -1,17 +1,15 @@
-/* Error: Undefined mixin.
- *   ,
- * 5 |   @include flexColumnStartCenter;
- *   |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\layout\main-layout.scss 5:3  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a   \2577 \a 5 \2502    @include flexColumnStartCenter;\d\a   \2502    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\layout\\main-layout.scss 5:3  root stylesheet";
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
 }
+
+.sidenav {
+  flex: 0 0 15%;
+}
+
+.main {
+  flex: 1;
+}
+
+/*# sourceMappingURL=main-layout.css.map */

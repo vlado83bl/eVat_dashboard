@@ -1,17 +1,22 @@
-/* Error: Undefined mixin.
- *   ,
- * 4 |   @include flexColumnCenterCenter;
- *   |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\components\subheader.scss 4:3  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a   \2577 \a 4 \2502    @include flexColumnCenterCenter;\d\a   \2502    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\components\\subheader.scss 4:3  root stylesheet";
+.subheader__categories {
+  list-style-type: none;
+  border-bottom: 1px solid #F5F6F7;
 }
+.subheader__categories--item {
+  border-bottom: 5px solid transparent;
+}
+.subheader__categories--item-active {
+  border-bottom: 3px solid var(--color-purple);
+}
+.subheader__categories--item-active a {
+  color: var(--color-purple) !important;
+  font-weight: 700 !important;
+}
+.subheader__categories--item a {
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--color-dark);
+  font-family: "Asap", sans-serif;
+}
+
+/*# sourceMappingURL=subheader.css.map */

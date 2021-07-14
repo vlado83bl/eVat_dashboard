@@ -1,0 +1,106 @@
+.main {
+  background-color: #eeecf769;
+  width: 100%;
+
+  &__heading {
+    width: 100%;
+
+    & i {
+      color: var(--color-gray-muted);
+    }
+
+    &--section-route {
+      font-weight: 700;
+      color: var(--color-purple);
+    }
+  }
+
+  &__data {
+    background-color: #fff;
+    height: 684px;
+
+    &--heading-country,
+    &--item-country {
+      flex: 0 0 19%;
+    }
+
+    &--heading-createdby,
+    &--item-createdby {
+      flex: 0 0 12%;
+    }
+
+    &--heading-createdat,
+    &--item-createdat {
+      flex: 0 0 13%;
+    }
+
+    &--heading-progress,
+    &--item-progress {
+      flex: 0 0 27%;
+    }
+
+    &--heading-status,
+    &--item-status {
+      flex: 0 0 18%;
+    }
+
+    &--heading-update,
+    &--item-update {
+      flex: 0 0 1;
+    }
+
+    &--heading {
+      width: 100%;
+      color: var(--color-light-gray);
+    }
+
+    &--items {
+
+      &-status {
+        flex: 0 0 50%;
+        padding-right: 15%;
+      }
+
+      &-info {
+        flex: 0 0 50%;
+        padding-right: 20%;
+      }
+
+      & i {
+        color: #fff;
+      }
+
+      & .fa-edit {
+        color: var(--color-purple) !important;
+      }
+    }
+
+    &--item {
+      &-active {
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      &-progress {
+        &-box {
+          width: 24px;
+          height: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          border: 1px solid var(--color-gray-muted);
+          color: var(--color-gray-muted);
+          font-size: 12px;
+          margin-right: 8px;
+
+          &-checked {
+            border: none;
+            background-color: var(--color-purple);
+            color: #fff;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
